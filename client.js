@@ -11,7 +11,7 @@ function clickHandler(){
   $("#container").on('click',"#swapDiv" ,colorChanger);
   $("#container").on('click',"#deleteDiv", deleteDiv);
 }
-var clicks = 0;
+var clicks = 1;
 
 function clickCounter(){
   clicks = clicks+1;
@@ -30,6 +30,6 @@ $(".buttonHolder").append($div);
 function colorChanger(){
   $('.newDiv').css("background-color","yellow");
 }
-function delteDiv(){
-  $(".newDiv").remove();
+function deleteDiv(){
+  $(this).closest('div').remove();
 }
