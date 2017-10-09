@@ -28,7 +28,7 @@ function appendDiv() {
 $(".buttonHolder").append($div);
 }
 function colorChanger(){
-  $('.newDiv').css("background-color","yellow");
+  $('.newDiv').css("yellow");
 }
 function deleteDiv(){
   $(this).closest('div').remove();
