@@ -9,6 +9,8 @@ function clickHandler(){
   $("#generate").on('click', appendDiv);
 }
 function appendDiv() {
-  $(".buttonHolder").append('<div>'+"Hello!"+'</div>');
-
+  //var $div= $(".buttonHolder").append('<div>'"hello"'</div>');
+  var $div = $('<div>"hello!"</div>');
+  $div.append('<p></p>');
+$(".buttonHolder").append($div);
 }
